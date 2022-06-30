@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>simple fanpage | practice html/css</title>
+    <style>
+        .mytitle{
+
+            width:100%;
+            height:250px;
+
+            background-image:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg");
+            background-size:cover;
+            background-position:center;
+            color:white;
+
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+        .mypost{
+
+            max-width:500px;
+            width:95%;
+
+            margin:10px auto 0 auto;
+
+            box-shadow:0px 0px 3px 0px gray;
+            padding:20px;
+        }
+        .mybtn{
+            margin-top:10px;
+        }
+        #floatingTextarea{
+            height:150px;
+        }
+        .card{
+            margin:10px;
+        }
+        .card-body > blockquote {
+            border:1px solid white;
+            border-radius: 3px;
+
+            box-shadow:0px 0px 3px 0px gray;
+            padding:0px 20px;
+
+            max-width:500px;
+            width:95%;
+            height:100px;
+
+            margin:10px auto;
+            /*margin-bottom: 100px;*/
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /*align-items: center;*/
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+     <div class="mytitle">
+        <h1>BTS FanPage🐥</h1>
+    </div>
+
+    <div class="card">
+        <div class="mypost">
+            <form class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="url">
+                <label for="floatingInput">Nickname</label>
+            </form>
+
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Supporting message</label>
+            </div>
+            <div class="mybtn">
+                <button type="button" class="btn btn-dark">Enter</button>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>Fantastic Album released this time!</p>
+                <footer class="blockquote-footer">A lovely fan in Korea
+                </footer>
+            </blockquote>
+
+            <blockquote class="blockquote mb-0">
+                <p>I love you BTS all of you! </p>
+                <footer class="blockquote-footer">Army fan club
+                </footer>
+            </blockquote>
+
+            <blockquote class="blockquote mb-0">
+                <p>I purple you!</p>
+                <footer class="blockquote-footer">Purple world
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+</body>
+
+</html>
