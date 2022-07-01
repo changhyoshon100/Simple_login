@@ -111,14 +111,26 @@
         }
         function fanMsg(){
             $(`#post`).show();
+
+            $.ajax({
+                type:"GET",
+                url:"http://spartacodingclub.shop/sparta_api/weather/seoul",
+                data:{},
+                success:function(response){
+                    let html_temp = $('#temp');
+                    html_temp.empty();
+                    html_temp.append("Today's Temperature: ",response['temp']);
+                }
+            })
         }
+
     </script>
 </head>
 
 <body>
      <div class="mytitle">
         <h1>BTS FanPage🐥</h1>
-         <button onclick="fanMsg()">Click Me to show your support!</button>
+         <button onclick="fanMsg()" id="temp">Click Me to show your support!</button>
     </div>
 
     <div class="card">
